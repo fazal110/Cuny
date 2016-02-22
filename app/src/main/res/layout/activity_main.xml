@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/cover"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:id="@+id/mainlayout"
+    android:background="@color/_white"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="320dp">
+
+
+    <TextView
+      android:padding="4dp"
+    android:text="@string/_email"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/emailet"
+        android:background="@drawable/round"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <TextView
+        android:padding="4dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        />
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/main_content"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
